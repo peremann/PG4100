@@ -18,6 +18,7 @@ public class SelfishThread implements Runnable {
 		t.start();
 	}
 
+	@Override
 	public void run() {
 		for (int i = 1; i < 6; i++) {
 			System.out.println(t.getName() + " has priority: " + t.getPriority());
